@@ -1,0 +1,25 @@
+.course
+    &-block
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        &__item
+            flex-basis: 26%
+            height: 200px
+            text-align: center
+            margin-bottom: 100px
+            padding: 10px
+            background-color: #fff
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15)
+            border-radius: 5px
+            --animate-duration: 2s
+        &__image
+            width: 200px
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15)
+            border-radius: 10px
+            margin-bottom: 20px
+@media (max-width: 1170px)
+    .course-block
+        padding: 0 30px 0px
+        &__item
+            margin-bottom: 60px

@@ -1,0 +1,44 @@
+.gallery
+    margin-bottom: 50px
+    &-block
+        display: flex
+        justify-content: space-between
+        &__text
+            flex-basis: 50%
+            font-size: 20px
+        &__images
+            display: flex
+            flex-direction: row
+            img
+                height: 420px
+                padding: 10px
+                border-radius: 15px
+        &__item
+            position: relative
+            img
+                display: block
+                height: 160px
+                padding: 10px
+                border-radius: 15px
+.button-gallery
+    position: absolute
+    right: 10px
+    bottom: 10px
+
+@media (max-width: 1170px)
+    .gallery-block
+        margin: 0 30px 70px
+@media ( max-width:830px)
+    .gallery-block
+        flex-direction: column
+        align-items: center
+        &__text
+            margin-bottom: 30px
+@media ( max-width:670px)
+    .gallery-block
+        text-align: center
+    .gallery-block__big
+        display: none
+    .button-gallery
+        position: static
+        margin-top: 50px

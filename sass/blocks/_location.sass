@@ -1,0 +1,48 @@
+.location
+    background: linear-gradient(131.93deg, #E1FEFA 20%, #FCF7F4 137.11%)
+    padding: 10px 0
+    &-block
+        display: flex
+        margin-bottom: 50px
+        &__item
+            margin-left: 70px
+            width: 320px
+        &__text
+            margin-bottom: 40px
+            border-left: 3px solid #66888c
+            h4
+                padding-left: 20px
+
+        &__phone
+            text-decoration: none
+            font-family: 'Philosopher', sans-serif
+            color: #66888c
+            padding-left: 20px
+.tabs
+    padding: 5px 5px 5px 20px
+    transition: 0.3s
+
+    &:hover
+        background-color: #66888c
+        color: #fff
+        padding: 5px 5px 5px 0px
+        cursor: pointer
+.active
+    background-color: #66888c
+    color: #fff
+    padding: 5px 5px 5px 0px
+    cursor: pointer
+
+@media ( max-width:830px)
+    .location-block__map
+        iframe
+            width: 320px
+            height: 300px
+@media ( max-width:670px)
+    .location-block
+        flex-direction: column
+        align-items: center
+        &__map
+            margin-bottom: 30px
+        &__item
+            margin: 0

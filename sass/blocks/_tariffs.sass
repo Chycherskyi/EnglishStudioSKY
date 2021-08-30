@@ -1,0 +1,41 @@
+.tariffs
+    &-block
+        display: flex
+        justify-content: center
+        height: 190px
+        padding-bottom: 50px
+        &__item
+            border: 2px solid transparent
+            border-image: linear-gradient(to right, #66888c 5%, #89ede4 80%)
+            border-image-slice: 1
+            width: 270px
+            margin-bottom: 20px
+        &__title
+            text-align: center
+            padding: 10px
+            font-size: 20px
+            background: #F4FBF8
+        &__price
+            display: block
+            margin: 10px 0 20px
+            text-align: center
+            font-size: 36px
+            font-weight: bold
+        &__text
+            margin: 0 10px
+div.tariffs-block__item:first-child
+    margin-right: 70px
+
+@media ( max-width:670px)
+    div.tariffs-block__item:first-child
+        margin-right: 30px
+@media ( max-width:550px)
+    .tariffs-block
+        flex-direction: column
+        align-items: center
+        height: 400px
+        &__item
+            height: 190px
+            padding-bottom: 30px
+    div.tariffs-block__item:first-child
+        margin-right: 0px

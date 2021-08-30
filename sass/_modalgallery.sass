@@ -1,0 +1,73 @@
+.modal-gallery
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 999
+    display: none
+    width: 100%
+    height: 100%
+    overflow: hidden
+    background-color: rgba(0, 0, 0, .8)
+    &__content
+        position: relative
+        display: flex
+        justify-content: space-around
+        align-items: center
+        flex-grow: 1
+    &__close
+        font-size: 100px
+        color: #fff
+        font-weight: 700
+        z-index: 999
+        border: none
+        cursor: pointer
+        &:hover
+            color: #c4c4c4
+    &__prev
+        position: fixed
+        left: 30px
+        top: 55vh
+        background-color: rgba(77, 77, 77, .9)
+        padding: 10px
+        border-radius: 3px
+        z-index: 999
+        cursor: pointer
+        color: #fff
+        &:hover
+            color: #c4c4c4
+    &__next
+        position: fixed
+        right: 30px
+        top: 55vh
+        background-color: rgba(77, 77, 77, .9)
+        padding: 10px
+        border-radius: 3px
+        z-index: 999
+        cursor: pointer
+        color: #fff
+        &:hover
+            color: #c4c4c4
+    &__top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0 30px
+    &__counter
+        font-size: 50px
+        color: #fff
+        font-weight: 700
+.total
+    font-size: 30px
+    font-weight: 400
+
+.gallery-slide
+    img
+        height: 70vh
+.show
+    display: flex
+    flex-direction: column
+
+.hide
+    display: none
+.arrow
+    display: block
